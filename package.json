@@ -4,13 +4,13 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "generateFakeData": "node ./generateFakeData.js > ./db.json",
-    "jsonServerWatch": "json-server --watch ./db.json"
+    "fakedata": "node ./generateFakeData.js > ./db.json",
+    "watch": "json-server --watch ./db.json"
   },
   "private": true,
   "dependencies": {

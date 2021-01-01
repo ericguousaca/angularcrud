@@ -3,8 +3,9 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { SelectRequiredValidatorDirective } from './shared/select-required-validator.directive';
 
 import { AppComponent } from './app.component';
@@ -66,6 +67,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     BsDatepickerModule.forRoot(),
     RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule
   ],
   providers: [
     EmployeeService,
